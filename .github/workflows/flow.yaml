@@ -15,7 +15,7 @@ jobs:
         uses: jpoehnelt/secrets-sync-action@v1.9.0
         with:
           SECRETS: |
-            ^WIRE_URL$
+            WIRE_URL
           REPOSITORIES: |
             Artanty/shared-secrets
           DRY_RUN: true
