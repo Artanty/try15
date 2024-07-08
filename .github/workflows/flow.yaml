@@ -19,7 +19,7 @@ jobs:
           REPOSITORIES: |
             Artanty/shared-secrets
           DRY_RUN: true
-          GITHUB_TOKEN: ${{secrets.SYNC}}
+          GITHUB_TOKEN: ech "${{secrets.SYNC}}"
           GITHUB_API_URL: ${{ secrets.CUSTOM_GITHUB_API_URL }}
           CONCURRENCY: 10
         env:
