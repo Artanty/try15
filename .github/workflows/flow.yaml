@@ -34,7 +34,7 @@ jobs:
           REPOSITORIES: |
             Artanty/shared-secrets
           DRY_RUN: true
-          GITHUB_TOKEN: echo "${{secrets.SYNC}}"
+          GITHUB_TOKEN: ${{secrets.SYNC}}
           CONCURRENCY: 10
   
       - name: Set secret
